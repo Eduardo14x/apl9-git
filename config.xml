@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+
+<widget xmlns ="http://www.w3.org/ns/widgets"
+   xmlns:gap ="http://phonegab.com/ns/1.0"
+   id ="com.phonegab.example9"
+   version ="1.0.0">
+   
+   <name>app9 geolocalizador</name>
+   
+   <description>
+    aplicacion que realiza la posicion donde te encuentras
+   </description>
+   
+   <author href="https://build.phonegab.com" email="caoslalo@live.com.mx">
+    eduardo patlan castillo
+   </author>
+   
+   <!--Personaliza la aplicacion y plataforma -->
+   <preference name="orientation" value="default"/>
+   <!--<preference name="orientation" value="portrait"/>
+   <preference name="orientation" value="landscape"/>-->
+   <preference name="target-device" value="universal"/>
+   <preference name="fullscreen" value="true"/>
+   <preference name="andriod-installLocation" value="auto"/>
+   <preference name="permissions" value="INTERNET"/>
+   
+   <!-- Plugins -->	
+   <!-- Core plugins -->
+<plugin name="cordova-plugin-device" spec="~1.1.4"/>
+<plugin name="cordova-plugin-vibration" spec="~2.1.3"/>
+<plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
+
+<!-- plugin para geolocalizador-->
+<plugin name="cordova-plugin-geolocation" source="npm"/>
+   
+   <!-- Colocar icono app -->
+   
+<icon src="res/android/mdpi.png"/>
+
+</widget>

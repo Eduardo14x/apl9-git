@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>
+<title>app9 geolocalizador</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app9.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"  type="text/javascript"></script>
+
+</head> 
+<body> 
+ <div data-role="page" id="principal" data-theme="a">
+  <div data-role="header" data-position="fixed" data-tap-toggle="false">
+    <h1>geolocalizador</h1>
+    </div>
+    
+  <div data-role="main" class="ui-content">
+    <div class="ui-btn" id="posicion">posicion en msg.alerta</div>
+    <div class="ui-btn" id="watch">posicion en movimiento(watch)</div>
+    <div>
+    <div>latitud:<span id="latitud"></span></div>
+    <div>longitud:<span id="longitud"></span></div>
+    <div>altitud:<span id="altitud"></span></div>
+    <div>accuracy:<span id="accuracy"></span></div>
+    <div>alt.accuracy:<span id="aaccuracy"></span></div>
+    <div>heading:<span id="headingg"></span></div>
+    <div>speed:<span id="speed"></span></div>
+    <div>timestamp:<span id="timestamp"></span></div>
+    </div>
+   </div>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+   <h4>eduardo patlan castillo</h4>
+  <h5>app9 GPS</h5>
+    <img src="res/android/mdpi.png" width="56" height="46">
+   </div>
+  </div>
+</body>
+</html>
